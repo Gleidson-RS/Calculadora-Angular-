@@ -18,3 +18,4 @@ export class CalculadoraComponent {
     this.resultado = Number(this.numero1) + Number(this.numero2);
   }
 }
+
