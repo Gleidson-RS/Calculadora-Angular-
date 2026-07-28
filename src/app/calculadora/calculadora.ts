@@ -8,6 +8,16 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './calculadora.html',
   styleUrl: './calculadora.css'
 })
+
+
+
+
+
+
+
+
+
+
 export class CalculadoraComponent {
   numero1 = 0;
   numero2 = 0;
@@ -17,5 +27,21 @@ export class CalculadoraComponent {
   somar() {
     this.resultado = Number(this.numero1) + Number(this.numero2);
   }
-}
 
+  subtrair() {
+    this.resultado = Number(this.numero1) - Number(this.numero2);
+  }
+
+  multiplicar() {
+    this.resultado = Number(this.numero1) * Number(this.numero2);
+  }
+
+  dividir() {
+    this.resultado = Number(this.numero1) / Number(this.numero2);
+  }
+
+  limpar() {
+    this.resultado = 0;
+  }
+
+}

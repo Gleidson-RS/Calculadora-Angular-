@@ -1,25 +1,26 @@
 
-<br><br>
 
-<input
-type="number"
-[(ngModel)]="numero1">
 
-<br><br>
 
-<input
-type="number"
-[(ngModel)]="numero2">
+<main id="geral">
 
-<br><br>
+    <h2>Resultado: {{resultado}}</h2>
+    <input type="number" [(ngModel)]="numero1">
 
-<button (click)="somar()">
+    <input type="number" [(ngModel)]="numero2"> 
+<br>
 
-Somar
 
-</button>
+<div id="botoes">
+    <button (click)="somar()">Somar</button>
+    
+    <button (click)="subtrair()">Subtrair</button>
 
-<h2>
+    <button (click)="multiplicar()">multiplicar</button>
+    
+    <button (click)="dividir()">Dividir</button>
 
-Resultado: {{resultado}}
-</h2>
+    <button (click)="limpar()">Limpar</button>
+</div>
+
+</main>
